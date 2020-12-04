@@ -3,8 +3,8 @@ package ua.edu.ucu.collections.immutable;
 import java.util.Arrays;
 
 public class ImmutableArrayList {
-    public int length;
-    public final Object[] arrayList;
+    private int length;
+    private final Object[] arrayList;
 
     public ImmutableArrayList(Object[] startList) {
         this.arrayList = new Object[startList.length];

@@ -6,9 +6,9 @@ import java.util.Arrays;
 public class ImmutableLinkedList {
 
     public static class Node {
-        public Node next;
-        public Node prev;
-        public Object value;
+        private Node next;
+        private Node prev;
+        private Object value;
 
         public Node(Object value, Node next, Node prev) {
             this.next = next;
@@ -17,9 +17,9 @@ public class ImmutableLinkedList {
         }
     }
 
-    public int length;
-    public Node head;
-    public Node tail;
+    private int length;
+    private Node head;
+    private Node tail;
 
     public ImmutableLinkedList(Object[] startList) {
         if (startList.length == 0) {
